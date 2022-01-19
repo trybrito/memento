@@ -1,7 +1,9 @@
 import React from 'react';
+import Router from './routes';
+import './global.scss';
 
 function App() {
-  return <h1>Hello, World!</h1>;
+  return <Router />;
 }
 
 export default App;
