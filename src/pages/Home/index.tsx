@@ -1,31 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Header from '../../components/Header';
 import './styles.scss';
 
 function Home() {
   return (
     <>
-      <header>
-        <h2 className="logo">Memento</h2>
-
-        <nav>
-          <ul>
-            <li>
-              <Link to="/score">Minhas pontuações</Link>
-            </li>
-          </ul>
-        </nav>
-
-        <button className="switcher" type="button">
-          <span />
-        </button>
-      </header>
+      <Header />
       <main>
         <div className="menu-card">
           <h1>Menu</h1>
 
           <div className="option-group">
-            <label htmlFor="player-name">Nome do jogador:</label>
+            <label htmlFor="player-name">Informe o nome do seu jogador:</label>
             <input
               type="text"
               id="player-name"
@@ -34,7 +20,7 @@ function Home() {
             />
           </div>
           <div className="option-group">
-            <p>Quantidade de pares:</p>
+            <p>Escolha a quantidade de pares:</p>
 
             <div className="pairs-selector-container">
               <button type="button">2</button>
