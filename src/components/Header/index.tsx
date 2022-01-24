@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './styles.scss';
+import styles from './styles.module.scss';
 
 function Header() {
   return (
     <header>
       <Link to="/">
-        <h2 className="logo">Memento</h2>
+        <h2 className={styles.logo}>Memento</h2>
       </Link>
 
       <nav>
@@ -17,7 +17,7 @@ function Header() {
         </ul>
       </nav>
 
-      <button className="switcher" type="button">
+      <button type="button" className={styles.switcher}>
         <span />
       </button>
     </header>
